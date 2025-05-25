@@ -1,0 +1,2965 @@
+[
+  {
+    "id": 1,
+    "name": "Michael Hall",
+    "email": "jenningsdavid@dorsey-thomas.biz",
+    "role": "Product Manager",
+    "department": "Engineering",
+    "joinedDate": "2021-04-28",
+    "status": "Resigned",
+    "salary": 97723,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project B",
+        "Project C",
+        "Project X"
+      ],
+      "manager": "Glen Reilly",
+      "skills": [
+        "AWS",
+        "JavaScript",
+        "Python"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Average"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-11-22"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Christopher Robinson",
+    "email": "boydandrea@gmail.com",
+    "role": "Data Analyst",
+    "department": "Quality",
+    "joinedDate": "2021-06-23",
+    "status": "Resigned",
+    "salary": 93721,
+    "location": "Bangalore",
+    "details": {
+      "projects": [
+        "Project D",
+        "Project A",
+        "Project Y"
+      ],
+      "manager": "Angelica Dunn",
+      "skills": [
+        "React",
+        "Python",
+        "Node.js",
+        "JavaScript",
+        "SQL"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-12-27"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Lucas Chase",
+    "email": "sullivanalexander@paul.biz",
+    "role": "Developer",
+    "department": "Engineering",
+    "joinedDate": "2023-09-02",
+    "status": "Resigned",
+    "salary": 100910,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project Y",
+        "Project B",
+        "Project Z"
+      ],
+      "manager": "Matthew Gillespie",
+      "skills": [
+        "JavaScript",
+        "AWS"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-05-23"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Anna Carter",
+    "email": "kristen69@wright.com",
+    "role": "Developer",
+    "department": "Engineering",
+    "joinedDate": "2021-07-23",
+    "status": "Resigned",
+    "salary": 98100,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project D",
+        "Project X",
+        "Project C"
+      ],
+      "manager": "Erika Hansen",
+      "skills": [
+        "JavaScript",
+        "Node.js",
+        "SQL",
+        "AWS",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Average"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-04-28"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Elizabeth Mercer",
+    "email": "rodriguezrebecca@sanders-velasquez.biz",
+    "role": "Designer",
+    "department": "Data",
+    "joinedDate": "2021-03-06",
+    "status": "On Leave",
+    "salary": 90283,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project D",
+        "Project Z"
+      ],
+      "manager": "Ashley Johnson",
+      "skills": [
+        "JavaScript",
+        "SQL",
+        "Cypress",
+        "JIRA",
+        "GraphQL"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-08-21"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Roberta Conley",
+    "email": "wtanner@reed.org",
+    "role": "QA Engineer",
+    "department": "Data",
+    "joinedDate": "2021-10-05",
+    "status": "Resigned",
+    "salary": 114581,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project A",
+        "Project D",
+        "Project Y"
+      ],
+      "manager": "Laura Gregory",
+      "skills": [
+        "Python",
+        "JIRA",
+        "Node.js",
+        "React"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-02-04"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Isabella Wright",
+    "email": "timothy57@keith-ramirez.net",
+    "role": "Product Manager",
+    "department": "Engineering",
+    "joinedDate": "2023-02-27",
+    "status": "Resigned",
+    "salary": 103345,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project D",
+        "Project C"
+      ],
+      "manager": "Angela Nelson",
+      "skills": [
+        "AWS",
+        "React",
+        "Node.js",
+        "Python",
+        "JavaScript"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Good"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2021-06-19"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Kaitlyn Mejia",
+    "email": "bmartin@white-strong.info",
+    "role": "Data Analyst",
+    "department": "Engineering",
+    "joinedDate": "2022-09-04",
+    "status": "On Leave",
+    "salary": 58098,
+    "location": "Bangalore",
+    "details": {
+      "projects": [
+        "Project Z",
+        "Project B",
+        "Project C"
+      ],
+      "manager": "Jane Morales",
+      "skills": [
+        "Cypress",
+        "AWS",
+        "Node.js",
+        "Figma",
+        "Python"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-04-25"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Susan Arnold",
+    "email": "sarahbrewer@munoz.info",
+    "role": "Data Analyst",
+    "department": "Product",
+    "joinedDate": "2021-05-29",
+    "status": "On Leave",
+    "salary": 54288,
+    "location": "San Francisco",
+    "details": {
+      "projects": [
+        "Project Y",
+        "Project D"
+      ],
+      "manager": "Patrick Church",
+      "skills": [
+        "Figma",
+        "Python",
+        "Cypress",
+        "React"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Good"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-08-09"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Amy Johnson",
+    "email": "comptondiane@conner.net",
+    "role": "Designer",
+    "department": "Product",
+    "joinedDate": "2021-10-13",
+    "status": "Active",
+    "salary": 82991,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project X",
+        "Project Z"
+      ],
+      "manager": "Mark Williams PhD",
+      "skills": [
+        "AWS",
+        "JIRA"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-06-05"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Chad Reid",
+    "email": "jrodgers@henry.com",
+    "role": "Product Manager",
+    "department": "Quality",
+    "joinedDate": "2022-06-11",
+    "status": "Active",
+    "salary": 79847,
+    "location": "Bangalore",
+    "details": {
+      "projects": [
+        "Project D",
+        "Project Z"
+      ],
+      "manager": "Ralph Harris",
+      "skills": [
+        "Node.js",
+        "JavaScript",
+        "Figma",
+        "Cypress"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-01-07"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Mallory Reeves",
+    "email": "pholmes@cole-doyle.com",
+    "role": "Developer",
+    "department": "Data",
+    "joinedDate": "2023-10-19",
+    "status": "Resigned",
+    "salary": 91174,
+    "location": "Tokyo",
+    "details": {
+      "projects": [
+        "Project C",
+        "Project B",
+        "Project A"
+      ],
+      "manager": "Jacob Johnson",
+      "skills": [
+        "Cypress",
+        "JIRA"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Average"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2021-09-02"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Wanda Knight",
+    "email": "frichmond@hess.com",
+    "role": "Data Analyst",
+    "department": "Quality",
+    "joinedDate": "2022-12-22",
+    "status": "Resigned",
+    "salary": 70491,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project C",
+        "Project A",
+        "Project Z"
+      ],
+      "manager": "Brianna Huerta",
+      "skills": [
+        "Cypress",
+        "JavaScript",
+        "AWS"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-05-17"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Michelle Dyer",
+    "email": "markhodge@gmail.com",
+    "role": "Data Analyst",
+    "department": "Data",
+    "joinedDate": "2021-11-10",
+    "status": "On Leave",
+    "salary": 50550,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project Z",
+        "Project B"
+      ],
+      "manager": "Mason Ponce",
+      "skills": [
+        "JIRA",
+        "Figma",
+        "Cypress"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-10-14"
+    }
+  },
+  {
+    "id": 15,
+    "name": "William Anderson",
+    "email": "xgray@juarez.com",
+    "role": "Product Manager",
+    "department": "Design",
+    "joinedDate": "2022-04-01",
+    "status": "Resigned",
+    "salary": 111056,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project C",
+        "Project Z",
+        "Project X"
+      ],
+      "manager": "Rachel Washington",
+      "skills": [
+        "GraphQL",
+        "Figma",
+        "AWS",
+        "SQL"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-08-15"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Bryce Carpenter",
+    "email": "karlanicholson@gmail.com",
+    "role": "Designer",
+    "department": "Design",
+    "joinedDate": "2024-12-11",
+    "status": "On Leave",
+    "salary": 64602,
+    "location": "San Francisco",
+    "details": {
+      "projects": [
+        "Project A"
+      ],
+      "manager": "Nancy Taylor",
+      "skills": [
+        "JavaScript",
+        "JIRA",
+        "Figma",
+        "SQL"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Average"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-07-15"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Nicole Fisher",
+    "email": "michael31@davis.com",
+    "role": "QA Engineer",
+    "department": "Product",
+    "joinedDate": "2023-06-19",
+    "status": "On Leave",
+    "salary": 77135,
+    "location": "Tokyo",
+    "details": {
+      "projects": [
+        "Project X"
+      ],
+      "manager": "Brenda Rodriguez",
+      "skills": [
+        "GraphQL",
+        "Node.js",
+        "JavaScript",
+        "Python"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Average"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-05-07"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Juan Cook",
+    "email": "phillipsbradley@nichols.org",
+    "role": "Data Analyst",
+    "department": "Data",
+    "joinedDate": "2021-06-27",
+    "status": "Active",
+    "salary": 55096,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project X",
+        "Project B",
+        "Project A"
+      ],
+      "manager": "Linda Stone",
+      "skills": [
+        "Cypress",
+        "AWS",
+        "React",
+        "Figma",
+        "Python"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-09-23"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Kevin Cochran",
+    "email": "amccormick@aguilar.com",
+    "role": "Data Analyst",
+    "department": "Design",
+    "joinedDate": "2024-05-17",
+    "status": "Active",
+    "salary": 79280,
+    "location": "Bangalore",
+    "details": {
+      "projects": [
+        "Project X"
+      ],
+      "manager": "Sandra West",
+      "skills": [
+        "SQL",
+        "JIRA",
+        "React",
+        "GraphQL"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Average"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-08-24"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Stephanie Patterson",
+    "email": "kmaldonado@yahoo.com",
+    "role": "Product Manager",
+    "department": "Product",
+    "joinedDate": "2024-04-14",
+    "status": "Active",
+    "salary": 91545,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project D",
+        "Project Y",
+        "Project Z"
+      ],
+      "manager": "Michael Chaney",
+      "skills": [
+        "SQL",
+        "React",
+        "Node.js",
+        "AWS",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-03-07"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Dana Campbell",
+    "email": "michaelyu@raymond.com",
+    "role": "Developer",
+    "department": "Product",
+    "joinedDate": "2022-01-26",
+    "status": "Active",
+    "salary": 78757,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project A",
+        "Project D"
+      ],
+      "manager": "Miss April Garcia",
+      "skills": [
+        "GraphQL",
+        "AWS",
+        "JIRA",
+        "JavaScript"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-01-29"
+    }
+  },
+  {
+    "id": 22,
+    "name": "Jerry Zuniga",
+    "email": "wgarcia@hotmail.com",
+    "role": "Data Analyst",
+    "department": "Product",
+    "joinedDate": "2024-07-07",
+    "status": "Resigned",
+    "salary": 67643,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project Y",
+        "Project C",
+        "Project X"
+      ],
+      "manager": "Amber Ortiz",
+      "skills": [
+        "SQL",
+        "AWS",
+        "React",
+        "GraphQL"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-05-18"
+    }
+  },
+  {
+    "id": 23,
+    "name": "Julian Michael",
+    "email": "psmith@buckley.biz",
+    "role": "QA Engineer",
+    "department": "Design",
+    "joinedDate": "2023-12-09",
+    "status": "Resigned",
+    "salary": 95113,
+    "location": "Tokyo",
+    "details": {
+      "projects": [
+        "Project X",
+        "Project A",
+        "Project D"
+      ],
+      "manager": "Dwayne Martinez",
+      "skills": [
+        "Node.js",
+        "SQL"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-10-25"
+    }
+  },
+  {
+    "id": 24,
+    "name": "Crystal Norton",
+    "email": "smithnicole@hotmail.com",
+    "role": "Designer",
+    "department": "Data",
+    "joinedDate": "2022-10-03",
+    "status": "Active",
+    "salary": 79516,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project Y",
+        "Project A",
+        "Project D"
+      ],
+      "manager": "Elizabeth Dyer",
+      "skills": [
+        "JIRA",
+        "React",
+        "Python",
+        "Figma",
+        "JavaScript"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Good"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-03-02"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Shawna Stewart",
+    "email": "johnsonsuzanne@moore.net",
+    "role": "Designer",
+    "department": "Data",
+    "joinedDate": "2024-05-06",
+    "status": "On Leave",
+    "salary": 75995,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project B",
+        "Project X"
+      ],
+      "manager": "Mr. Bruce Perez Jr.",
+      "skills": [
+        "JIRA",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-03-04"
+    }
+  },
+  {
+    "id": 26,
+    "name": "Daniel Williams",
+    "email": "pwhite@gmail.com",
+    "role": "Product Manager",
+    "department": "Product",
+    "joinedDate": "2021-11-05",
+    "status": "On Leave",
+    "salary": 53886,
+    "location": "San Francisco",
+    "details": {
+      "projects": [
+        "Project A"
+      ],
+      "manager": "Marco Thomas",
+      "skills": [
+        "Figma",
+        "Python",
+        "AWS"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Good"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-07-13"
+    }
+  },
+  {
+    "id": 27,
+    "name": "Clayton Roman",
+    "email": "patrick25@howell-solis.com",
+    "role": "QA Engineer",
+    "department": "Data",
+    "joinedDate": "2022-04-12",
+    "status": "Resigned",
+    "salary": 56360,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project Z"
+      ],
+      "manager": "Thomas Suarez",
+      "skills": [
+        "GraphQL",
+        "JIRA",
+        "AWS"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-02-09"
+    }
+  },
+  {
+    "id": 28,
+    "name": "Chelsey Murphy",
+    "email": "simmonsjamie@williams-williams.info",
+    "role": "Data Analyst",
+    "department": "Design",
+    "joinedDate": "2024-09-19",
+    "status": "Resigned",
+    "salary": 101609,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project X",
+        "Project B"
+      ],
+      "manager": "Christine Rice",
+      "skills": [
+        "Figma",
+        "JIRA"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-11-06"
+    }
+  },
+  {
+    "id": 29,
+    "name": "Eric Flores",
+    "email": "christopher91@martinez.com",
+    "role": "Product Manager",
+    "department": "Design",
+    "joinedDate": "2024-08-05",
+    "status": "On Leave",
+    "salary": 115216,
+    "location": "San Francisco",
+    "details": {
+      "projects": [
+        "Project Z",
+        "Project A",
+        "Project X"
+      ],
+      "manager": "Frederick Clark DVM",
+      "skills": [
+        "JIRA",
+        "SQL"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-04-20"
+    }
+  },
+  {
+    "id": 30,
+    "name": "Alicia Thompson",
+    "email": "cherylevans@page.com",
+    "role": "Developer",
+    "department": "Engineering",
+    "joinedDate": "2022-05-05",
+    "status": "Active",
+    "salary": 60977,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project C",
+        "Project Z",
+        "Project D"
+      ],
+      "manager": "Elizabeth Payne",
+      "skills": [
+        "Python",
+        "Cypress",
+        "JavaScript",
+        "Node.js",
+        "React"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Good"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-04-27"
+    }
+  },
+  {
+    "id": 31,
+    "name": "Taylor Sanders",
+    "email": "xbanks@willis.com",
+    "role": "QA Engineer",
+    "department": "Design",
+    "joinedDate": "2021-09-20",
+    "status": "Resigned",
+    "salary": 55981,
+    "location": "San Francisco",
+    "details": {
+      "projects": [
+        "Project D",
+        "Project A",
+        "Project X"
+      ],
+      "manager": "Angela Aguilar",
+      "skills": [
+        "JIRA",
+        "JavaScript",
+        "Python",
+        "SQL",
+        "Cypress"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2021-01-22"
+    }
+  },
+  {
+    "id": 32,
+    "name": "Samantha Carter",
+    "email": "brewerashley@richard.com",
+    "role": "Data Analyst",
+    "department": "Engineering",
+    "joinedDate": "2023-10-03",
+    "status": "Active",
+    "salary": 108678,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project C",
+        "Project B",
+        "Project X"
+      ],
+      "manager": "Walter Gilbert",
+      "skills": [
+        "JIRA",
+        "GraphQL",
+        "Node.js",
+        "Python"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-03-17"
+    }
+  },
+  {
+    "id": 33,
+    "name": "Olivia Valdez",
+    "email": "pmarshall@gmail.com",
+    "role": "Developer",
+    "department": "Data",
+    "joinedDate": "2024-10-14",
+    "status": "Active",
+    "salary": 105049,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project Z"
+      ],
+      "manager": "Kathleen Wood",
+      "skills": [
+        "Python",
+        "Node.js",
+        "JavaScript",
+        "JIRA",
+        "SQL"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-05-05"
+    }
+  },
+  {
+    "id": 34,
+    "name": "Lisa Krueger",
+    "email": "matthew82@yahoo.com",
+    "role": "Designer",
+    "department": "Design",
+    "joinedDate": "2022-03-17",
+    "status": "On Leave",
+    "salary": 92843,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project Y"
+      ],
+      "manager": "Jonathan Castillo",
+      "skills": [
+        "Node.js",
+        "JavaScript"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-10-25"
+    }
+  },
+  {
+    "id": 35,
+    "name": "Laura Ford",
+    "email": "davidsmith@gmail.com",
+    "role": "Data Analyst",
+    "department": "Engineering",
+    "joinedDate": "2023-10-05",
+    "status": "Resigned",
+    "salary": 82278,
+    "location": "Tokyo",
+    "details": {
+      "projects": [
+        "Project C"
+      ],
+      "manager": "Jennifer Collins",
+      "skills": [
+        "SQL",
+        "JavaScript",
+        "Python"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2021-11-05"
+    }
+  },
+  {
+    "id": 36,
+    "name": "Kristen Lucas",
+    "email": "hendrixdavid@nunez.com",
+    "role": "Developer",
+    "department": "Design",
+    "joinedDate": "2021-04-03",
+    "status": "Resigned",
+    "salary": 70794,
+    "location": "Bangalore",
+    "details": {
+      "projects": [
+        "Project A",
+        "Project X",
+        "Project C"
+      ],
+      "manager": "Adrienne Hernandez",
+      "skills": [
+        "JavaScript",
+        "Figma",
+        "AWS",
+        "SQL"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-10-22"
+    }
+  },
+  {
+    "id": 37,
+    "name": "Jason Stanton",
+    "email": "william80@hotmail.com",
+    "role": "QA Engineer",
+    "department": "Quality",
+    "joinedDate": "2023-05-15",
+    "status": "Active",
+    "salary": 64798,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project C",
+        "Project D",
+        "Project X"
+      ],
+      "manager": "Luis Bond",
+      "skills": [
+        "Figma",
+        "GraphQL",
+        "Node.js",
+        "React"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Good"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-12-03"
+    }
+  },
+  {
+    "id": 38,
+    "name": "Richard Jimenez",
+    "email": "alvaradorachel@hotmail.com",
+    "role": "Data Analyst",
+    "department": "Quality",
+    "joinedDate": "2024-10-09",
+    "status": "On Leave",
+    "salary": 113498,
+    "location": "San Francisco",
+    "details": {
+      "projects": [
+        "Project Y",
+        "Project B",
+        "Project Z"
+      ],
+      "manager": "Craig Johnson",
+      "skills": [
+        "Cypress",
+        "React",
+        "JIRA",
+        "JavaScript"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-12-31"
+    }
+  },
+  {
+    "id": 39,
+    "name": "Craig Johnson",
+    "email": "jenny09@gmail.com",
+    "role": "QA Engineer",
+    "department": "Design",
+    "joinedDate": "2023-09-08",
+    "status": "Resigned",
+    "salary": 51397,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project Y",
+        "Project A"
+      ],
+      "manager": "Kari Franklin",
+      "skills": [
+        "React",
+        "Node.js",
+        "JavaScript",
+        "GraphQL",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-01-13"
+    }
+  },
+  {
+    "id": 40,
+    "name": "Julie Solomon",
+    "email": "alexcoffey@black.com",
+    "role": "Developer",
+    "department": "Engineering",
+    "joinedDate": "2022-09-30",
+    "status": "Active",
+    "salary": 105102,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project B"
+      ],
+      "manager": "Jennifer Hartman",
+      "skills": [
+        "SQL",
+        "GraphQL",
+        "Cypress",
+        "Figma",
+        "React"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-05-13"
+    }
+  },
+  {
+    "id": 41,
+    "name": "Rebecca Richards",
+    "email": "lopezsandra@yahoo.com",
+    "role": "QA Engineer",
+    "department": "Data",
+    "joinedDate": "2024-04-01",
+    "status": "Active",
+    "salary": 83159,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project Z"
+      ],
+      "manager": "Samantha Miller",
+      "skills": [
+        "GraphQL",
+        "Figma",
+        "JIRA",
+        "React"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-09-23"
+    }
+  },
+  {
+    "id": 42,
+    "name": "Dominic Haynes",
+    "email": "scott96@rodriguez.biz",
+    "role": "Data Analyst",
+    "department": "Quality",
+    "joinedDate": "2022-06-06",
+    "status": "Active",
+    "salary": 88077,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project Z",
+        "Project X"
+      ],
+      "manager": "David Roy",
+      "skills": [
+        "JavaScript",
+        "AWS"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2021-01-02"
+    }
+  },
+  {
+    "id": 43,
+    "name": "Daniel Espinoza",
+    "email": "katherinecarrillo@gmail.com",
+    "role": "Developer",
+    "department": "Engineering",
+    "joinedDate": "2022-07-06",
+    "status": "Resigned",
+    "salary": 82406,
+    "location": "Tokyo",
+    "details": {
+      "projects": [
+        "Project D"
+      ],
+      "manager": "Lindsay Davis",
+      "skills": [
+        "GraphQL",
+        "Cypress",
+        "JavaScript",
+        "JIRA",
+        "Node.js"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-10-02"
+    }
+  },
+  {
+    "id": 44,
+    "name": "Cindy Hoffman",
+    "email": "barbara78@graves-serrano.com",
+    "role": "Developer",
+    "department": "Engineering",
+    "joinedDate": "2021-03-11",
+    "status": "Resigned",
+    "salary": 107202,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project B",
+        "Project D"
+      ],
+      "manager": "Shelley Barnes",
+      "skills": [
+        "Node.js",
+        "Python",
+        "SQL"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-09-21"
+    }
+  },
+  {
+    "id": 45,
+    "name": "Glenn Ward",
+    "email": "dennis87@hotmail.com",
+    "role": "Data Analyst",
+    "department": "Engineering",
+    "joinedDate": "2024-03-14",
+    "status": "Active",
+    "salary": 117915,
+    "location": "Tokyo",
+    "details": {
+      "projects": [
+        "Project D"
+      ],
+      "manager": "Luke Kelley",
+      "skills": [
+        "React",
+        "Figma",
+        "SQL",
+        "GraphQL",
+        "Node.js"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Good"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-03-26"
+    }
+  },
+  {
+    "id": 46,
+    "name": "Mark Davis",
+    "email": "kelly84@hotmail.com",
+    "role": "QA Engineer",
+    "department": "Product",
+    "joinedDate": "2021-03-09",
+    "status": "On Leave",
+    "salary": 55451,
+    "location": "Bangalore",
+    "details": {
+      "projects": [
+        "Project B",
+        "Project Z"
+      ],
+      "manager": "Daniel Elliott",
+      "skills": [
+        "Figma",
+        "Node.js"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-02-10"
+    }
+  },
+  {
+    "id": 47,
+    "name": "David Sanchez",
+    "email": "conniebaker@gmail.com",
+    "role": "QA Engineer",
+    "department": "Data",
+    "joinedDate": "2024-07-09",
+    "status": "Active",
+    "salary": 98456,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project B"
+      ],
+      "manager": "Jennifer Snow",
+      "skills": [
+        "Figma",
+        "AWS"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-10-28"
+    }
+  },
+  {
+    "id": 48,
+    "name": "Andrew Bailey",
+    "email": "foxdavid@yahoo.com",
+    "role": "Developer",
+    "department": "Engineering",
+    "joinedDate": "2023-05-20",
+    "status": "On Leave",
+    "salary": 82573,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project C"
+      ],
+      "manager": "Barbara Hill",
+      "skills": [
+        "Cypress",
+        "React",
+        "AWS",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Good"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-10-15"
+    }
+  },
+  {
+    "id": 49,
+    "name": "Patrick Strong",
+    "email": "patrickmartinez@yahoo.com",
+    "role": "Designer",
+    "department": "Quality",
+    "joinedDate": "2021-04-27",
+    "status": "Active",
+    "salary": 53955,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project A",
+        "Project D"
+      ],
+      "manager": "Dakota Wright",
+      "skills": [
+        "GraphQL",
+        "React"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-03-28"
+    }
+  },
+  {
+    "id": 50,
+    "name": "Matthew Mcknight",
+    "email": "angelathompson@powell.com",
+    "role": "Data Analyst",
+    "department": "Product",
+    "joinedDate": "2021-04-05",
+    "status": "On Leave",
+    "salary": 83812,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project X",
+        "Project C"
+      ],
+      "manager": "William Harris",
+      "skills": [
+        "JIRA",
+        "Figma",
+        "React",
+        "JavaScript"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-12-13"
+    }
+  },
+  {
+    "id": 51,
+    "name": "Lori Allen",
+    "email": "smithlauren@gmail.com",
+    "role": "Designer",
+    "department": "Product",
+    "joinedDate": "2022-12-14",
+    "status": "Resigned",
+    "salary": 99333,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project Y"
+      ],
+      "manager": "Tim Stokes",
+      "skills": [
+        "JavaScript",
+        "Node.js",
+        "SQL",
+        "JIRA",
+        "GraphQL"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-09-15"
+    }
+  },
+  {
+    "id": 52,
+    "name": "Christina Ford",
+    "email": "jonathanyoung@gmail.com",
+    "role": "Data Analyst",
+    "department": "Product",
+    "joinedDate": "2023-10-13",
+    "status": "Active",
+    "salary": 93538,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project C"
+      ],
+      "manager": "Julie Cook",
+      "skills": [
+        "Cypress",
+        "SQL",
+        "AWS",
+        "React"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-05-04"
+    }
+  },
+  {
+    "id": 53,
+    "name": "Alexandria Rodriguez",
+    "email": "slindsey@hotmail.com",
+    "role": "Data Analyst",
+    "department": "Quality",
+    "joinedDate": "2022-10-01",
+    "status": "Resigned",
+    "salary": 68737,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project D",
+        "Project A"
+      ],
+      "manager": "Brittany Martin",
+      "skills": [
+        "GraphQL",
+        "Node.js",
+        "JavaScript"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-06-27"
+    }
+  },
+  {
+    "id": 54,
+    "name": "Robert Johnson",
+    "email": "richardschristopher@hendricks-vega.com",
+    "role": "Designer",
+    "department": "Engineering",
+    "joinedDate": "2021-09-23",
+    "status": "On Leave",
+    "salary": 96172,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project B",
+        "Project Z"
+      ],
+      "manager": "Hector Anderson",
+      "skills": [
+        "Figma",
+        "SQL"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-06-06"
+    }
+  },
+  {
+    "id": 55,
+    "name": "Randy Morris",
+    "email": "zachary86@yahoo.com",
+    "role": "Designer",
+    "department": "Product",
+    "joinedDate": "2023-01-08",
+    "status": "Resigned",
+    "salary": 104678,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project Y",
+        "Project B"
+      ],
+      "manager": "Megan Wilson",
+      "skills": [
+        "Node.js",
+        "GraphQL"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Good"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-11-16"
+    }
+  },
+  {
+    "id": 56,
+    "name": "Brian Johnson",
+    "email": "michael54@yahoo.com",
+    "role": "Designer",
+    "department": "Quality",
+    "joinedDate": "2024-07-04",
+    "status": "Resigned",
+    "salary": 99593,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project B"
+      ],
+      "manager": "John Gaines",
+      "skills": [
+        "Node.js",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Good"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-03-18"
+    }
+  },
+  {
+    "id": 57,
+    "name": "Mary Acosta",
+    "email": "rebecca03@tucker.com",
+    "role": "Data Analyst",
+    "department": "Engineering",
+    "joinedDate": "2021-09-15",
+    "status": "Resigned",
+    "salary": 91444,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project Y",
+        "Project Z"
+      ],
+      "manager": "Jody Smith",
+      "skills": [
+        "Figma",
+        "React",
+        "GraphQL",
+        "JIRA",
+        "Cypress"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Good"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-01-22"
+    }
+  },
+  {
+    "id": 58,
+    "name": "Kristen Perez",
+    "email": "christopher57@underwood.biz",
+    "role": "Developer",
+    "department": "Design",
+    "joinedDate": "2024-12-25",
+    "status": "On Leave",
+    "salary": 60460,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project D",
+        "Project Z",
+        "Project A"
+      ],
+      "manager": "Richard Butler",
+      "skills": [
+        "Python",
+        "React",
+        "JIRA"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-10-22"
+    }
+  },
+  {
+    "id": 59,
+    "name": "Mark Perry",
+    "email": "hamptonkevin@hotmail.com",
+    "role": "Product Manager",
+    "department": "Product",
+    "joinedDate": "2021-11-15",
+    "status": "Active",
+    "salary": 89449,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project A",
+        "Project D"
+      ],
+      "manager": "Sean Sanchez",
+      "skills": [
+        "Python",
+        "JavaScript"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Good"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-05-07"
+    }
+  },
+  {
+    "id": 60,
+    "name": "Elizabeth Hernandez",
+    "email": "kgutierrez@hernandez-garza.com",
+    "role": "Designer",
+    "department": "Design",
+    "joinedDate": "2024-01-17",
+    "status": "Active",
+    "salary": 92279,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project B",
+        "Project X"
+      ],
+      "manager": "Gary Bullock",
+      "skills": [
+        "JavaScript",
+        "React"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-10-22"
+    }
+  },
+  {
+    "id": 61,
+    "name": "Darlene Robinson",
+    "email": "reedmelissa@hotmail.com",
+    "role": "Product Manager",
+    "department": "Data",
+    "joinedDate": "2021-07-30",
+    "status": "Resigned",
+    "salary": 52016,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project Y"
+      ],
+      "manager": "Kelly Wiley",
+      "skills": [
+        "Python",
+        "Cypress",
+        "JavaScript",
+        "Node.js",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-04-07"
+    }
+  },
+  {
+    "id": 62,
+    "name": "Steven Cole",
+    "email": "rushbill@gmail.com",
+    "role": "Data Analyst",
+    "department": "Product",
+    "joinedDate": "2023-07-02",
+    "status": "Resigned",
+    "salary": 58028,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project C"
+      ],
+      "manager": "John Lara",
+      "skills": [
+        "AWS",
+        "React",
+        "Python"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-05-10"
+    }
+  },
+  {
+    "id": 63,
+    "name": "Daniel Allison",
+    "email": "seth35@hotmail.com",
+    "role": "Data Analyst",
+    "department": "Product",
+    "joinedDate": "2021-10-07",
+    "status": "Resigned",
+    "salary": 68989,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project X"
+      ],
+      "manager": "Krystal Thompson",
+      "skills": [
+        "SQL",
+        "JIRA",
+        "JavaScript"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-10-13"
+    }
+  },
+  {
+    "id": 64,
+    "name": "Amber Watkins MD",
+    "email": "brewerjames@williams.com",
+    "role": "Data Analyst",
+    "department": "Data",
+    "joinedDate": "2023-07-16",
+    "status": "On Leave",
+    "salary": 90631,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project D",
+        "Project X",
+        "Project C"
+      ],
+      "manager": "Amy Mcguire",
+      "skills": [
+        "SQL",
+        "JIRA",
+        "AWS"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-12-08"
+    }
+  },
+  {
+    "id": 65,
+    "name": "Andrea Evans",
+    "email": "mjordan@gmail.com",
+    "role": "Data Analyst",
+    "department": "Quality",
+    "joinedDate": "2022-09-18",
+    "status": "Active",
+    "salary": 113145,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project A",
+        "Project B"
+      ],
+      "manager": "William Sparks",
+      "skills": [
+        "AWS",
+        "React"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Good"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-04-02"
+    }
+  },
+  {
+    "id": 66,
+    "name": "Tara Mccann",
+    "email": "stephanie43@yahoo.com",
+    "role": "Data Analyst",
+    "department": "Engineering",
+    "joinedDate": "2024-02-12",
+    "status": "Resigned",
+    "salary": 79322,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project B"
+      ],
+      "manager": "Linda Odonnell",
+      "skills": [
+        "AWS",
+        "Python",
+        "SQL",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-01-04"
+    }
+  },
+  {
+    "id": 67,
+    "name": "David White",
+    "email": "zguerra@robertson.com",
+    "role": "QA Engineer",
+    "department": "Engineering",
+    "joinedDate": "2024-06-22",
+    "status": "On Leave",
+    "salary": 74133,
+    "location": "San Francisco",
+    "details": {
+      "projects": [
+        "Project C",
+        "Project Z",
+        "Project A"
+      ],
+      "manager": "Amber Robinson",
+      "skills": [
+        "SQL",
+        "Figma",
+        "JavaScript"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-06-30"
+    }
+  },
+  {
+    "id": 68,
+    "name": "Felicia Lee",
+    "email": "amandacarlson@douglas.com",
+    "role": "Designer",
+    "department": "Engineering",
+    "joinedDate": "2023-06-11",
+    "status": "On Leave",
+    "salary": 61015,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project Z",
+        "Project A",
+        "Project X"
+      ],
+      "manager": "Dr. Christian Hodge",
+      "skills": [
+        "Python",
+        "React",
+        "GraphQL"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-01-31"
+    }
+  },
+  {
+    "id": 69,
+    "name": "Andrew Chapman",
+    "email": "frankmelissa@yahoo.com",
+    "role": "Developer",
+    "department": "Engineering",
+    "joinedDate": "2022-07-27",
+    "status": "On Leave",
+    "salary": 53958,
+    "location": "San Francisco",
+    "details": {
+      "projects": [
+        "Project Z",
+        "Project C",
+        "Project A"
+      ],
+      "manager": "Jessica Johnson",
+      "skills": [
+        "React",
+        "Cypress",
+        "Python",
+        "Node.js",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-06-03"
+    }
+  },
+  {
+    "id": 70,
+    "name": "Monique Herrera",
+    "email": "leslierice@gmail.com",
+    "role": "Data Analyst",
+    "department": "Quality",
+    "joinedDate": "2023-09-07",
+    "status": "Resigned",
+    "salary": 77901,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project Z"
+      ],
+      "manager": "Sarah Richardson",
+      "skills": [
+        "GraphQL",
+        "Node.js",
+        "JIRA",
+        "React",
+        "AWS"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-10-24"
+    }
+  },
+  {
+    "id": 71,
+    "name": "Andrew Hancock",
+    "email": "curtisjonathan@hotmail.com",
+    "role": "Designer",
+    "department": "Data",
+    "joinedDate": "2022-05-06",
+    "status": "Resigned",
+    "salary": 115778,
+    "location": "Tokyo",
+    "details": {
+      "projects": [
+        "Project Y",
+        "Project D"
+      ],
+      "manager": "Joseph Williams",
+      "skills": [
+        "Node.js",
+        "React",
+        "SQL",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-06-28"
+    }
+  },
+  {
+    "id": 72,
+    "name": "Brenda Daniels",
+    "email": "smithkaitlyn@yahoo.com",
+    "role": "Designer",
+    "department": "Engineering",
+    "joinedDate": "2024-09-17",
+    "status": "Active",
+    "salary": 107464,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project Y"
+      ],
+      "manager": "Jane Brown",
+      "skills": [
+        "AWS",
+        "JavaScript",
+        "Cypress"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Good"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-08-12"
+    }
+  },
+  {
+    "id": 73,
+    "name": "Sarah Hutchinson",
+    "email": "christina44@gmail.com",
+    "role": "Data Analyst",
+    "department": "Product",
+    "joinedDate": "2021-04-21",
+    "status": "Resigned",
+    "salary": 71696,
+    "location": "Tokyo",
+    "details": {
+      "projects": [
+        "Project B",
+        "Project C"
+      ],
+      "manager": "Lisa Knox",
+      "skills": [
+        "SQL",
+        "JavaScript"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-07-07"
+    }
+  },
+  {
+    "id": 74,
+    "name": "Robert Christian",
+    "email": "myersmadison@yahoo.com",
+    "role": "QA Engineer",
+    "department": "Product",
+    "joinedDate": "2022-06-15",
+    "status": "On Leave",
+    "salary": 83344,
+    "location": "Tokyo",
+    "details": {
+      "projects": [
+        "Project B",
+        "Project Z",
+        "Project Y"
+      ],
+      "manager": "Ronald Rodriguez",
+      "skills": [
+        "JIRA",
+        "Cypress"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-12-11"
+    }
+  },
+  {
+    "id": 75,
+    "name": "Lauren Simpson",
+    "email": "gregory51@barnes.info",
+    "role": "Developer",
+    "department": "Product",
+    "joinedDate": "2024-06-11",
+    "status": "On Leave",
+    "salary": 94996,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project C"
+      ],
+      "manager": "Cole Price",
+      "skills": [
+        "AWS",
+        "Cypress",
+        "Node.js",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Average"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-11-24"
+    }
+  },
+  {
+    "id": 76,
+    "name": "Nancy Francis",
+    "email": "iayala@hotmail.com",
+    "role": "Data Analyst",
+    "department": "Product",
+    "joinedDate": "2021-07-05",
+    "status": "On Leave",
+    "salary": 91693,
+    "location": "San Francisco",
+    "details": {
+      "projects": [
+        "Project B",
+        "Project X"
+      ],
+      "manager": "Margaret Ortiz",
+      "skills": [
+        "Figma",
+        "Python",
+        "Cypress"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-11-29"
+    }
+  },
+  {
+    "id": 77,
+    "name": "Beverly Ibarra",
+    "email": "mary00@marks-riggs.biz",
+    "role": "QA Engineer",
+    "department": "Quality",
+    "joinedDate": "2021-11-19",
+    "status": "Active",
+    "salary": 108155,
+    "location": "Tokyo",
+    "details": {
+      "projects": [
+        "Project B",
+        "Project Z",
+        "Project X"
+      ],
+      "manager": "Isabella Jones",
+      "skills": [
+        "Cypress",
+        "SQL",
+        "JavaScript"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Average"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-03-29"
+    }
+  },
+  {
+    "id": 78,
+    "name": "Jeremy Benson",
+    "email": "shelly00@fuller.org",
+    "role": "Designer",
+    "department": "Quality",
+    "joinedDate": "2022-03-15",
+    "status": "On Leave",
+    "salary": 116260,
+    "location": "San Francisco",
+    "details": {
+      "projects": [
+        "Project C",
+        "Project A"
+      ],
+      "manager": "Jessica Smith",
+      "skills": [
+        "GraphQL",
+        "JIRA",
+        "SQL",
+        "Cypress",
+        "React"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-05-19"
+    }
+  },
+  {
+    "id": 79,
+    "name": "Jeffrey Hood",
+    "email": "samantharose@yahoo.com",
+    "role": "Developer",
+    "department": "Design",
+    "joinedDate": "2023-11-09",
+    "status": "Resigned",
+    "salary": 75319,
+    "location": "Tokyo",
+    "details": {
+      "projects": [
+        "Project Z"
+      ],
+      "manager": "Richard Morales",
+      "skills": [
+        "Python",
+        "Figma",
+        "AWS",
+        "JavaScript",
+        "SQL"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-12-10"
+    }
+  },
+  {
+    "id": 80,
+    "name": "Ian Adams",
+    "email": "erin39@hunter-adams.com",
+    "role": "Designer",
+    "department": "Product",
+    "joinedDate": "2021-03-17",
+    "status": "Active",
+    "salary": 80582,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project B",
+        "Project Y"
+      ],
+      "manager": "Heather Winters",
+      "skills": [
+        "Python",
+        "AWS",
+        "JIRA"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-01-25"
+    }
+  },
+  {
+    "id": 81,
+    "name": "Isaac Huffman",
+    "email": "parsonsamanda@johnson.com",
+    "role": "Developer",
+    "department": "Product",
+    "joinedDate": "2022-05-15",
+    "status": "Resigned",
+    "salary": 70927,
+    "location": "Tokyo",
+    "details": {
+      "projects": [
+        "Project A",
+        "Project D"
+      ],
+      "manager": "Elizabeth Lamb",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Figma",
+        "GraphQL",
+        "Python"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2021-10-07"
+    }
+  },
+  {
+    "id": 82,
+    "name": "John Cummings",
+    "email": "clayton80@oconnell-jackson.org",
+    "role": "Data Analyst",
+    "department": "Quality",
+    "joinedDate": "2024-03-20",
+    "status": "On Leave",
+    "salary": 96460,
+    "location": "Tokyo",
+    "details": {
+      "projects": [
+        "Project Y",
+        "Project D"
+      ],
+      "manager": "Eugene Warner",
+      "skills": [
+        "JavaScript",
+        "GraphQL",
+        "SQL",
+        "AWS"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-06-29"
+    }
+  },
+  {
+    "id": 83,
+    "name": "Courtney House",
+    "email": "candice69@gmail.com",
+    "role": "QA Engineer",
+    "department": "Data",
+    "joinedDate": "2023-05-07",
+    "status": "On Leave",
+    "salary": 70132,
+    "location": "San Francisco",
+    "details": {
+      "projects": [
+        "Project D",
+        "Project Y"
+      ],
+      "manager": "William Swanson",
+      "skills": [
+        "Python",
+        "Node.js",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-06-15"
+    }
+  },
+  {
+    "id": 84,
+    "name": "Victoria Valdez",
+    "email": "owolf@yahoo.com",
+    "role": "Product Manager",
+    "department": "Product",
+    "joinedDate": "2021-07-05",
+    "status": "Resigned",
+    "salary": 98119,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project C",
+        "Project Y"
+      ],
+      "manager": "Pamela Rowland",
+      "skills": [
+        "Cypress",
+        "AWS"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Good"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-11-04"
+    }
+  },
+  {
+    "id": 85,
+    "name": "Charles Baker",
+    "email": "carneymelissa@simmons-delacruz.com",
+    "role": "QA Engineer",
+    "department": "Design",
+    "joinedDate": "2023-10-29",
+    "status": "Active",
+    "salary": 59024,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project A",
+        "Project C"
+      ],
+      "manager": "Anita Woods",
+      "skills": [
+        "Cypress",
+        "JIRA"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-09-11"
+    }
+  },
+  {
+    "id": 86,
+    "name": "Kristy Harris",
+    "email": "denisemorgan@franklin.com",
+    "role": "Data Analyst",
+    "department": "Engineering",
+    "joinedDate": "2023-06-13",
+    "status": "Resigned",
+    "salary": 100058,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project Y"
+      ],
+      "manager": "Susan Strickland",
+      "skills": [
+        "AWS",
+        "Node.js",
+        "Figma",
+        "GraphQL",
+        "JavaScript"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Good"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-11-20"
+    }
+  },
+  {
+    "id": 87,
+    "name": "Melanie Williams",
+    "email": "joseph98@mcdonald.com",
+    "role": "Developer",
+    "department": "Data",
+    "joinedDate": "2024-05-19",
+    "status": "Resigned",
+    "salary": 115542,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project Y",
+        "Project B",
+        "Project D"
+      ],
+      "manager": "Michael Price",
+      "skills": [
+        "Cypress",
+        "JavaScript",
+        "React",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-06-06"
+    }
+  },
+  {
+    "id": 88,
+    "name": "Jamie Brown",
+    "email": "vmorris@hotmail.com",
+    "role": "Designer",
+    "department": "Engineering",
+    "joinedDate": "2024-03-05",
+    "status": "On Leave",
+    "salary": 59836,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project C"
+      ],
+      "manager": "Carrie Cisneros",
+      "skills": [
+        "JIRA",
+        "Python"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Average"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2022-02-17"
+    }
+  },
+  {
+    "id": 89,
+    "name": "David Mckay",
+    "email": "staceywade@sloan.info",
+    "role": "QA Engineer",
+    "department": "Quality",
+    "joinedDate": "2023-05-06",
+    "status": "On Leave",
+    "salary": 105090,
+    "location": "Bangalore",
+    "details": {
+      "projects": [
+        "Project D",
+        "Project X"
+      ],
+      "manager": "Jennifer Gutierrez",
+      "skills": [
+        "JIRA",
+        "AWS",
+        "Cypress",
+        "Python"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-10-31"
+    }
+  },
+  {
+    "id": 90,
+    "name": "Amanda Murray",
+    "email": "wheeleramber@gmail.com",
+    "role": "Data Analyst",
+    "department": "Data",
+    "joinedDate": "2021-08-31",
+    "status": "On Leave",
+    "salary": 88024,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project Z",
+        "Project X",
+        "Project Y"
+      ],
+      "manager": "Helen Anderson",
+      "skills": [
+        "Cypress",
+        "AWS",
+        "Python",
+        "SQL",
+        "JIRA"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2023-11-09"
+    }
+  },
+  {
+    "id": 91,
+    "name": "Christian Garcia",
+    "email": "richardford@bauer.com",
+    "role": "Developer",
+    "department": "Quality",
+    "joinedDate": "2021-04-15",
+    "status": "Active",
+    "salary": 64533,
+    "location": "Dubai",
+    "details": {
+      "projects": [
+        "Project A",
+        "Project D"
+      ],
+      "manager": "Lauren Davis",
+      "skills": [
+        "React",
+        "Node.js"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-11-25"
+    }
+  },
+  {
+    "id": 92,
+    "name": "David Rose",
+    "email": "williamsdaniel@hotmail.com",
+    "role": "Product Manager",
+    "department": "Data",
+    "joinedDate": "2021-04-18",
+    "status": "Resigned",
+    "salary": 74822,
+    "location": "New York",
+    "details": {
+      "projects": [
+        "Project X",
+        "Project C",
+        "Project D"
+      ],
+      "manager": "Heather Gilbert",
+      "skills": [
+        "Cypress",
+        "GraphQL",
+        "SQL"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-04-28"
+    }
+  },
+  {
+    "id": 93,
+    "name": "Andrew Cooper",
+    "email": "jonesjonathan@rice.info",
+    "role": "Product Manager",
+    "department": "Quality",
+    "joinedDate": "2021-05-14",
+    "status": "Active",
+    "salary": 62861,
+    "location": "Berlin",
+    "details": {
+      "projects": [
+        "Project Z",
+        "Project Y"
+      ],
+      "manager": "Kristen Klein",
+      "skills": [
+        "GraphQL",
+        "JavaScript",
+        "Cypress",
+        "SQL"
+      ],
+      "performance": {
+        "2023": "Poor",
+        "2022": "Poor"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-02-10"
+    }
+  },
+  {
+    "id": 94,
+    "name": "Jessica Burgess",
+    "email": "martinezdavid@gmail.com",
+    "role": "Product Manager",
+    "department": "Data",
+    "joinedDate": "2024-06-18",
+    "status": "Active",
+    "salary": 85763,
+    "location": "Bangalore",
+    "details": {
+      "projects": [
+        "Project X",
+        "Project A"
+      ],
+      "manager": "Stephen Fisher",
+      "skills": [
+        "SQL",
+        "AWS",
+        "Python",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-12-09"
+    }
+  },
+  {
+    "id": 95,
+    "name": "Brent Turner",
+    "email": "antonio24@hotmail.com",
+    "role": "QA Engineer",
+    "department": "Product",
+    "joinedDate": "2021-01-21",
+    "status": "Active",
+    "salary": 101949,
+    "location": "San Francisco",
+    "details": {
+      "projects": [
+        "Project D"
+      ],
+      "manager": "Jordan Lawson",
+      "skills": [
+        "SQL",
+        "Cypress",
+        "AWS",
+        "Figma",
+        "Node.js"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Average"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2023-04-17"
+    }
+  },
+  {
+    "id": 96,
+    "name": "Kenneth Cabrera",
+    "email": "james08@hotmail.com",
+    "role": "Developer",
+    "department": "Design",
+    "joinedDate": "2023-02-17",
+    "status": "On Leave",
+    "salary": 64953,
+    "location": "Tokyo",
+    "details": {
+      "projects": [
+        "Project Y",
+        "Project A",
+        "Project Z"
+      ],
+      "manager": "Michelle Colon",
+      "skills": [
+        "AWS",
+        "React",
+        "Figma",
+        "Python"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Good"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-07-24"
+    }
+  },
+  {
+    "id": 97,
+    "name": "Jacob Ware",
+    "email": "holly97@gmail.com",
+    "role": "QA Engineer",
+    "department": "Quality",
+    "joinedDate": "2021-04-16",
+    "status": "On Leave",
+    "salary": 107450,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project B"
+      ],
+      "manager": "Leslie Morrow",
+      "skills": [
+        "Cypress",
+        "GraphQL",
+        "Python",
+        "AWS",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Good",
+        "2022": "Good"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2021-10-08"
+    }
+  },
+  {
+    "id": 98,
+    "name": "Carolyn Mckee",
+    "email": "brenthall@oconnor.com",
+    "role": "Designer",
+    "department": "Engineering",
+    "joinedDate": "2023-12-05",
+    "status": "Active",
+    "salary": 86162,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project Y",
+        "Project C",
+        "Project Z"
+      ],
+      "manager": "Michael Leblanc",
+      "skills": [
+        "AWS",
+        "JIRA",
+        "Cypress"
+      ],
+      "performance": {
+        "2023": "Average",
+        "2022": "Good"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2022-02-25"
+    }
+  },
+  {
+    "id": 99,
+    "name": "Michael Manning",
+    "email": "humphreyjeremy@wilkerson.biz",
+    "role": "Designer",
+    "department": "Data",
+    "joinedDate": "2024-06-29",
+    "status": "Resigned",
+    "salary": 98698,
+    "location": "San Francisco",
+    "details": {
+      "projects": [
+        "Project C",
+        "Project A"
+      ],
+      "manager": "Mrs. April Weber",
+      "skills": [
+        "Node.js",
+        "React",
+        "SQL",
+        "AWS",
+        "Figma"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Excellent"
+      },
+      "availableForNewProjects": true,
+      "lastPromotionDate": "2021-04-23"
+    }
+  },
+  {
+    "id": 100,
+    "name": "Robert Shelton",
+    "email": "christina59@williams.biz",
+    "role": "Product Manager",
+    "department": "Product",
+    "joinedDate": "2021-10-13",
+    "status": "Active",
+    "salary": 83490,
+    "location": "London",
+    "details": {
+      "projects": [
+        "Project A",
+        "Project Y"
+      ],
+      "manager": "Brian Krueger",
+      "skills": [
+        "GraphQL",
+        "Figma",
+        "JavaScript",
+        "React"
+      ],
+      "performance": {
+        "2023": "Excellent",
+        "2022": "Good"
+      },
+      "availableForNewProjects": false,
+      "lastPromotionDate": "2021-09-24"
+    }
+  }
+]

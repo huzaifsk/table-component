@@ -23,6 +23,7 @@ export default function Chip({ label }) {
     <span
       className={`text-sm font-medium px-3 py-1 rounded-full inline-block ${colorClass}`}
     >
+      {" "}
       {label}
     </span>
   );

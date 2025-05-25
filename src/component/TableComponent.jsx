@@ -31,6 +31,7 @@ export function Td({
   width,
   colSpan,
   noDefault = false,
+  title,
 }) {
   const handleDoubleClick = (e) => {
     if (onDoubleClick) {
@@ -44,6 +45,7 @@ export function Td({
 
   return (
     <td
+      title={title}
       className={baseClass}
       style={width ? { width: width } : {}}
       colSpan={colSpan}

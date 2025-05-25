@@ -12,6 +12,7 @@ import {
   ArrowDownWideNarrow,
 } from "lucide-react";
 import { toast } from "react-toastify";
+import Chip from "./component/Chip";
 
 export default function ViewTable() {
   const [employees, setEmployees] = useState(employeesData);
@@ -48,25 +49,22 @@ export default function ViewTable() {
     });
   };
 
-  const handleRowSelect = (index) => {
-    setSelectedRows((prevSelectedRows) =>
-      prevSelectedRows.includes(index)
-        ? prevSelectedRows.filter((rowIndex) => rowIndex !== index)
-        : [...prevSelectedRows, index],
+  const handleRowSelect = (id) => {
+    setSelectedRows((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
     );
   };
 
   const handleDeleteSelected = () => {
     if (selectedRows.length === 0) {
-      toast.dismiss();
       toast.warning("No rows selected for deletion.");
       return;
     }
 
-    setEmployees((prevEmployees) =>
-      prevEmployees.filter((_, index) => !selectedRows.includes(index)),
+    setEmployees((prev) =>
+      prev.filter((emp) => !selectedRows.includes(emp.id)),
     );
-    setSelectedRows([]); // Reset selected rows after deletion
+    setSelectedRows([]);
     toast.success("Selected rows deleted successfully");
   };
 
@@ -96,17 +94,16 @@ export default function ViewTable() {
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
-      setEditingCell(null); // save on Enter key
-      toast.success("Changes done successfully");
+      setEditingCell(null);
+      toast.success("Changes saved");
     } else if (e.key === "Escape") {
-      setEditingCell(null); // cancel on Escape key
+      setEditingCell(null);
     }
   };
 
   const filtered = employees.filter((emp) => {
     const joinedDateMatch = filters.joinedDate
-      ? new Date(emp.joinedDate).getTime() ===
-        new Date(filters.joinedDate).getTime()
+      ? emp.joinedDate?.split("T")[0] === filters.joinedDate
       : true;
 
     return (
@@ -126,16 +123,22 @@ export default function ViewTable() {
     );
   });
 
+  const sorted = [...filtered];
   if (sortConfig.key) {
-    filtered.sort((a, b) => {
-      const valA = a[sortConfig.key] || "";
-      const valB = b[sortConfig.key] || "";
-
+    sorted.sort((a, b) => {
+      const valA = (a[sortConfig.key] || "").toString().toLowerCase();
+      const valB = (b[sortConfig.key] || "").toString().toLowerCase();
       if (valA < valB) return sortConfig.direction === "asc" ? -1 : 1;
       if (valA > valB) return sortConfig.direction === "asc" ? 1 : -1;
       return 0;
     });
   }
+
+  const totalPages = Math.ceil(sorted.length / rowsPerPage);
+  const paginatedData = sorted.slice(
+    (currentPage - 1) * rowsPerPage,
+    currentPage * rowsPerPage,
+  );
 
   const uniqueRoles = [
     ...new Set(employees.map((e) => e.role).filter(Boolean)),
@@ -144,13 +147,6 @@ export default function ViewTable() {
     ...new Set(employees.map((e) => e.department).filter(Boolean)),
   ];
 
-  const totalPages = Math.ceil(filtered.length / rowsPerPage);
-  const paginatedData = filtered.slice(
-    (currentPage - 1) * rowsPerPage,
-    currentPage * rowsPerPage,
-  );
-
-  // Export to CSV function
   const exportToCSV = () => {
     const headers = [
       "Name",
@@ -175,10 +171,10 @@ export default function ViewTable() {
       emp.location,
       emp.joinedDate,
       emp.details?.manager,
-      emp.details?.projects ? emp.details.projects.join("; ") : "",
+      emp.details?.projects?.join("; ") || "",
       emp.details?.performance?.["2023"] || "",
       emp.details?.performance?.["2022"] || "",
-      emp.details?.skills ? emp.details.skills.join("; ") : "",
+      emp.details?.skills?.join("; ") || "",
       emp.details?.lastPromotionDate || "",
     ]);
 
@@ -188,10 +184,10 @@ export default function ViewTable() {
     ].join("\n");
 
     const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
-    const url = window.URL.createObjectURL(blob);
+    const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
-    link.setAttribute("href", url);
-    link.setAttribute("download", "employees.csv");
+    link.href = url;
+    link.download = "employees.csv";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -200,7 +196,7 @@ export default function ViewTable() {
   const columns = [
     { label: "Name", key: "name", width: "180px" },
     { label: "Email", key: "email", width: "240px" },
-    { label: "Role", key: "role", width: "140px" },
+    { label: "Role", key: "role", width: "180px" },
     { label: "Department", key: "department", width: "160px" },
     { label: "Location", key: "location", width: "140px" },
     { label: "Joined Date", key: "joinedDate", width: "160px" },
@@ -214,29 +210,35 @@ export default function ViewTable() {
           onClick={handleDeleteSelected}
           className="bg-red-700 hover:bg-red-600 text-white px-4 py-2 rounded flex items-center"
         >
-          <Trash className="w-5 h-5 mr-2" /> {/* Trash icon */}
+          <Trash className="w-5 h-5 mr-2" />
           Delete Selected
         </button>
         <button
           onClick={exportToCSV}
           className="bg-green-700 hover:bg-green-600 text-white px-4 py-2 ml-2 rounded flex items-center"
         >
-          <Download className="w-5 h-5 mr-2" /> {/* Download icon */}
+          <Download className="w-5 h-5 mr-2" />
           Export to CSV
         </button>
       </div>
+
       <Table>
-        <thead className="text-gray-800 text-sm font-semibold">
+        <thead>
           <Tr>
-            <Th>
+            <Th width={"20px"}>
               <input
                 type="checkbox"
-                checked={selectedRows.length === employees.length}
+                checked={paginatedData.every((emp) =>
+                  selectedRows.includes(emp.id),
+                )}
                 onChange={() => {
-                  if (selectedRows.length === employees.length) {
-                    setSelectedRows([]);
+                  const ids = paginatedData.map((emp) => emp.id);
+                  if (ids.every((id) => selectedRows.includes(id))) {
+                    setSelectedRows((prev) =>
+                      prev.filter((id) => !ids.includes(id)),
+                    );
                   } else {
-                    setSelectedRows(employees.map((_, index) => index));
+                    setSelectedRows((prev) => [...new Set([...prev, ...ids])]);
                   }
                 }}
               />
@@ -244,16 +246,17 @@ export default function ViewTable() {
             {columns.map((header) => (
               <Th
                 key={header.key}
-                className="px-4 py-3 cursor-pointer select-none"
+                width={header.width}
+                className="cursor-pointer"
                 onClick={() => handleSort(header.key)}
               >
                 <div className="flex items-center justify-between gap-1">
                   {header.label}
                   {sortConfig.key === header.key &&
                   sortConfig.direction === "asc" ? (
-                    <ArrowUpWideNarrow className="w-4 h-4 inline" />
+                    <ArrowUpWideNarrow className="w-4 h-4" />
                   ) : (
-                    <ArrowDownWideNarrow className="w-4 h-4 inline" />
+                    <ArrowDownWideNarrow className="w-4 h-4" />
                   )}
                 </div>
               </Th>
@@ -261,29 +264,20 @@ export default function ViewTable() {
           </Tr>
           <Tr>
             <Th></Th>
-            {[
-              "name",
-              "email",
-              "role",
-              "department",
-              "location",
-              "joinedDate",
-              "details",
-            ].map((key, i) => (
-              <Th key={i} className="px-4 py-2">
-                {key === "details" ? null : key === "joinedDate" ? (
+            {columns.map((col, i) => (
+              <Th key={i}>
+                {col.key === "details" ? null : col.key === "joinedDate" ? (
                   <input
                     type="date"
-                    placeholder={`Filter ${key}`}
-                    value={filters[key] || ""}
+                    value={filters[col.key]}
                     onChange={handleDateFilterChange}
-                    className="w-full py-1 text-gray-700 outline-none"
+                    className="w-full text-gray-700"
                   />
-                ) : key === "role" ? (
+                ) : col.key === "role" ? (
                   <select
-                    value={filters[key]}
-                    onChange={(e) => handleFilterChange(e, key)}
-                    className="w-full py-1 text-gray-700 outline-none"
+                    value={filters[col.key]}
+                    onChange={(e) => handleFilterChange(e, col.key)}
+                    className="w-full text-gray-700"
                   >
                     <option value="">All Roles</option>
                     {uniqueRoles.map((role, idx) => (
@@ -292,11 +286,11 @@ export default function ViewTable() {
                       </option>
                     ))}
                   </select>
-                ) : key === "department" ? (
+                ) : col.key === "department" ? (
                   <select
-                    value={filters[key]}
-                    onChange={(e) => handleFilterChange(e, key)}
-                    className="w-full py-1 text-gray-700 outline-none"
+                    value={filters[col.key]}
+                    onChange={(e) => handleFilterChange(e, col.key)}
+                    className="w-full text-gray-700"
                   >
                     <option value="">All Departments</option>
                     {uniqueDepartments.map((dept, idx) => (
@@ -308,10 +302,10 @@ export default function ViewTable() {
                 ) : (
                   <input
                     type="text"
-                    placeholder={`Filter ${key}`}
-                    value={filters[key] || ""}
-                    onChange={(e) => handleFilterChange(e, key)}
-                    className="w-full py-1 text-gray-700 outline-none"
+                    value={filters[col.key]}
+                    onChange={(e) => handleFilterChange(e, col.key)}
+                    className="w-full text-gray-700 outline-0 border-0"
+                    placeholder="please search.."
                   />
                 )}
               </Th>
@@ -322,7 +316,7 @@ export default function ViewTable() {
         <TBody
           data={paginatedData}
           renderRow={(emp, i) => {
-            const actualIndex = (currentPage - 1) * rowsPerPage + i;
+            const actualIndex = employees.findIndex((e) => e.id === emp.id);
             const isExpanded = expandedRow === actualIndex;
             const editableFields = [
               "name",
@@ -338,8 +332,8 @@ export default function ViewTable() {
                   <Td>
                     <input
                       type="checkbox"
-                      checked={selectedRows.includes(actualIndex)}
-                      onChange={() => handleRowSelect(actualIndex)}
+                      checked={selectedRows.includes(emp.id)}
+                      onChange={() => handleRowSelect(emp.id)}
                     />
                   </Td>
                   {editableFields.map((field) => (
@@ -361,30 +355,29 @@ export default function ViewTable() {
                           onBlur={handleBlur}
                           onKeyDown={handleKeyDown}
                           autoFocus
-                          className="w-full py-0.5 text-gray-700"
+                          className="w-full text-gray-700"
                         />
+                      ) : field === "role" || field === "department" ? (
+                        <Chip label={employees[actualIndex][field] || "N/A"} />
                       ) : (
                         employees[actualIndex][field]
                       )}
                     </Td>
                   ))}
+
                   <Td className="text-center">{emp.joinedDate}</Td>
                   <Td className="text-center">
-                    <button
-                      onClick={() => toggleDetails(actualIndex)}
-                      title={isExpanded ? "Hide Details" : "Show Details"}
-                      className="text-gray-600 hover:text-gray-900"
-                    >
+                    <button onClick={() => toggleDetails(actualIndex)}>
                       {isExpanded ? (
-                        <EyeOff className="w-4 h-4 cursor-pointer" />
+                        <EyeOff className="w-4 h-4" />
                       ) : (
-                        <Eye className="w-4 h-4 cursor-pointer" />
+                        <Eye className="w-4 h-4" />
                       )}
                     </button>
                   </Td>
                 </Tr>
 
-                <Tr className="bg-gray-50">
+                <Tr>
                   <Td colSpan={8} className="p-0 m-0 border-0" noDefault>
                     <div
                       className={`overflow-hidden transition-all duration-300 ease-in-out ${

@@ -1,3 +1,4 @@
+import { ArrowDownWideNarrow, ArrowUpWideNarrow } from "lucide-react";
 import React from "react";
 
 export function Table({ children, className = "" }) {
@@ -26,17 +27,15 @@ export function Th({ children, width, onClick }) {
 
 export function Td({
   children,
-  onDoubleClick,
+  onClick,
   className = "",
   width,
   colSpan,
   noDefault = false,
   title,
 }) {
-  const handleDoubleClick = (e) => {
-    if (onDoubleClick) {
-      onDoubleClick(e);
-    }
+  const handleClick = (e) => {
+    onClick(e);
   };
 
   const baseClass = noDefault
@@ -49,7 +48,7 @@ export function Td({
       className={baseClass}
       style={width ? { width: width } : {}}
       colSpan={colSpan}
-      onDoubleClick={handleDoubleClick}
+      onClick={handleClick}
     >
       {children}
     </td>
@@ -66,4 +65,79 @@ export function TFooter({ children }) {
 
 export function Tr({ children }) {
   return <tr className="hover:bg-neutral-50">{children}</tr>;
+}
+
+export function SortableTh({ children, sortKey, sortConfig, onSort, width }) {
+  const isSorted = sortConfig.key === sortKey;
+  const directionIcon =
+    sortConfig.direction === "asc" ? (
+      <ArrowUpWideNarrow className="w-4 h-4" />
+    ) : (
+      <ArrowDownWideNarrow className="w-4 h-4" />
+    );
+
+  return (
+    <Th
+      onClick={() => onSort(sortKey)}
+      width={width}
+      className="cursor-pointer"
+    >
+      <div className="flex items-center justify-between gap-1">
+        {children}
+        {isSorted && directionIcon}
+      </div>
+    </Th>
+  );
+}
+
+export function FilterableTh({
+  value,
+  onChange,
+  options,
+  isDate,
+  placeholder = "Search...",
+}) {
+  if (options) {
+    return (
+      <Th>
+        <select
+          value={value}
+          onChange={onChange}
+          className="w-full text-gray-700"
+        >
+          <option value="">All</option>
+          {options.map((opt, idx) => (
+            <option key={idx} value={opt}>
+              {opt}
+            </option>
+          ))}
+        </select>
+      </Th>
+    );
+  }
+
+  if (isDate) {
+    return (
+      <Th>
+        <input
+          type="date"
+          value={value}
+          onChange={onChange}
+          className="w-full text-gray-700"
+        />
+      </Th>
+    );
+  }
+
+  return (
+    <Th>
+      <input
+        type="text"
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        className="w-full text-gray-700 outline-0 border-0"
+      />
+    </Th>
+  );
 }

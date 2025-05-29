@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import employeesData from "./data/employees_100.json";
-import { Table, Th, Td, TBody, Tr, TFooter } from "./component/TableComponent";
+import {
+  Table,
+  Th,
+  Td,
+  TBody,
+  Tr,
+  TFooter,
+  SortableTh,
+  FilterableTh,
+} from "./component/TableComponent";
 import {
   Trash,
   Download,
@@ -8,8 +17,6 @@ import {
   MoveRight,
   EyeOff,
   Eye,
-  ArrowUpWideNarrow,
-  ArrowDownWideNarrow,
 } from "lucide-react";
 import { toast } from "react-toastify";
 import Chip from "./component/Chip";
@@ -73,12 +80,7 @@ export default function ViewTable() {
     setFilters({ ...filters, [key]: e.target.value });
   };
 
-  const handleDateFilterChange = (e) => {
-    setCurrentPage(1);
-    setFilters({ ...filters, joinedDate: e.target.value });
-  };
-
-  const handleDoubleClick = (rowIndex, field) => {
+  const handleClick = (rowIndex, field) => {
     setEditingCell({ rowIndex, field });
   };
 
@@ -146,6 +148,30 @@ export default function ViewTable() {
   const uniqueDepartments = [
     ...new Set(employees.map((e) => e.department).filter(Boolean)),
   ];
+
+  const colorMap = {
+    role: {
+      "Product Manager": "bg-blue-100 text-blue-800",
+      "Data Analyst": "bg-red-100 text-red-800",
+      Developer: "bg-green-100 text-green-800",
+      Designer: "bg-yellow-100 text-yellow-800",
+      "QA Engineer": "bg-purple-100 text-purple-800",
+      All: "bg-gray-100 text-gray-800", // Optional if used for filtering
+      default: "bg-gray-100 text-gray-800",
+    },
+    department: {
+      Engineering: "bg-blue-100 text-blue-800",
+      Quality: "bg-rose-100 text-rose-800",
+      Data: "bg-teal-100 text-teal-800",
+      Product: "bg-violet-100 text-violet-800",
+      Design: "bg-yellow-100 text-yellow-800",
+      default: "bg-gray-100 text-gray-800",
+    },
+  };
+
+  const getColorClass = (field, value) => {
+    return colorMap[field]?.[value] || colorMap[field]?.default || "";
+  };
 
   const exportToCSV = () => {
     const headers = [
@@ -244,166 +270,153 @@ export default function ViewTable() {
               />
             </Th>
             {columns.map((header) => (
-              <Th
+              <SortableTh
                 key={header.key}
+                sortKey={header.key}
+                sortConfig={sortConfig}
+                onSort={handleSort}
                 width={header.width}
-                className="cursor-pointer"
-                onClick={() => handleSort(header.key)}
               >
-                <div className="flex items-center justify-between gap-1">
-                  {header.label}
-                  {sortConfig.key === header.key &&
-                  sortConfig.direction === "asc" ? (
-                    <ArrowUpWideNarrow className="w-4 h-4" />
-                  ) : (
-                    <ArrowDownWideNarrow className="w-4 h-4" />
-                  )}
-                </div>
-              </Th>
+                {header.label}
+              </SortableTh>
             ))}
           </Tr>
           <Tr>
             <Th></Th>
-            {columns.map((col, i) => (
-              <Th key={i}>
-                {col.key === "details" ? null : col.key === "joinedDate" ? (
-                  <input
-                    type="date"
-                    value={filters[col.key]}
-                    onChange={handleDateFilterChange}
-                    className="w-full text-gray-700"
-                  />
-                ) : col.key === "role" ? (
-                  <select
-                    value={filters[col.key]}
-                    onChange={(e) => handleFilterChange(e, col.key)}
-                    className="w-full text-gray-700"
-                  >
-                    <option value="">All Roles</option>
-                    {uniqueRoles.map((role, idx) => (
-                      <option key={idx} value={role}>
-                        {role}
-                      </option>
-                    ))}
-                  </select>
-                ) : col.key === "department" ? (
-                  <select
-                    value={filters[col.key]}
-                    onChange={(e) => handleFilterChange(e, col.key)}
-                    className="w-full text-gray-700"
-                  >
-                    <option value="">All Departments</option>
-                    {uniqueDepartments.map((dept, idx) => (
-                      <option key={idx} value={dept}>
-                        {dept}
-                      </option>
-                    ))}
-                  </select>
-                ) : (
-                  <input
-                    type="text"
-                    value={filters[col.key]}
-                    onChange={(e) => handleFilterChange(e, col.key)}
-                    className="w-full text-gray-700 outline-0 border-0"
-                    placeholder="please search.."
-                  />
-                )}
-              </Th>
-            ))}
+            {columns.map((col, i) => {
+              const isDate = col.key === "joinedDate";
+              const options =
+                col.key === "role"
+                  ? uniqueRoles
+                  : col.key === "department"
+                  ? uniqueDepartments
+                  : null;
+
+              return (
+                <FilterableTh
+                  key={i}
+                  value={filters[col.key]}
+                  onChange={(e) => handleFilterChange(e, col.key)}
+                  options={options}
+                  isDate={isDate}
+                />
+              );
+            })}
           </Tr>
         </thead>
 
-        <TBody
-          data={paginatedData}
-          renderRow={(emp, i) => {
-            const actualIndex = employees.findIndex((e) => e.id === emp.id);
-            const isExpanded = expandedRow === actualIndex;
-            const editableFields = [
-              "name",
-              "email",
-              "role",
-              "department",
-              "location",
-            ];
+        {paginatedData.length === 0 ? (
+          <tbody>
+            <Tr>
+              <Td colSpan={columns.length + 1} className="text-center py-6">
+                No data found.
+              </Td>
+            </Tr>
+          </tbody>
+        ) : (
+          <TBody
+            data={paginatedData}
+            renderRow={(emp, i) => {
+              const actualIndex = employees.findIndex((e) => e.id === emp.id);
+              const isExpanded = expandedRow === actualIndex;
+              const editableFields = [
+                "name",
+                "email",
+                "role",
+                "department",
+                "location",
+              ];
 
-            return (
-              <>
-                <Tr className="hover:bg-gray-100 transition-colors">
-                  <Td>
-                    <input
-                      type="checkbox"
-                      checked={selectedRows.includes(emp.id)}
-                      onChange={() => handleRowSelect(emp.id)}
-                    />
-                  </Td>
-                  {editableFields.map((field) => (
-                    <Td
-                      key={field}
-                      onDoubleClick={() =>
-                        handleDoubleClick(actualIndex, field)
-                      }
-                      className="cursor-pointer"
-                    >
-                      {editingCell?.rowIndex === actualIndex &&
-                      editingCell?.field === field ? (
-                        <input
-                          type="text"
-                          value={employees[actualIndex][field]}
-                          onChange={(e) =>
-                            handleEditChange(e, actualIndex, field)
-                          }
-                          onBlur={handleBlur}
-                          onKeyDown={handleKeyDown}
-                          autoFocus
-                          className="w-full text-gray-700"
-                        />
-                      ) : field === "role" || field === "department" ? (
-                        <Chip label={employees[actualIndex][field] || "N/A"} />
-                      ) : (
-                        employees[actualIndex][field]
-                      )}
+              return (
+                <>
+                  <Tr className="hover:bg-gray-100 transition-colors">
+                    <Td>
+                      <input
+                        type="checkbox"
+                        checked={selectedRows.includes(emp.id)}
+                        onChange={() => handleRowSelect(emp.id)}
+                      />
                     </Td>
-                  ))}
+                    {editableFields.map((field) => (
+                      <Td
+                        key={field}
+                        onClick={() => handleClick(actualIndex, field)}
+                        className="cursor-pointer"
+                      >
+                        {editingCell?.rowIndex === actualIndex &&
+                        editingCell?.field === field ? (
+                          <input
+                            type="text"
+                            value={employees[actualIndex][field]}
+                            onChange={(e) =>
+                              handleEditChange(e, actualIndex, field)
+                            }
+                            onBlur={handleBlur}
+                            onKeyDown={handleKeyDown}
+                            autoFocus
+                            className="w-full text-gray-700"
+                          />
+                        ) : field === "role" || field === "department" ? (
+                          <Chip
+                            colorClass={getColorClass(
+                              field,
+                              employees[actualIndex][field],
+                            )}
+                            label={employees[actualIndex][field]}
+                          />
+                        ) : (
+                          employees[actualIndex][field]
+                        )}
+                      </Td>
+                    ))}
+                    <Td className="text-center">{emp.joinedDate}</Td>
+                    <Td className="text-center">
+                      <button onClick={() => toggleDetails(actualIndex)}>
+                        {isExpanded ? (
+                          <EyeOff className="w-4 h-4" />
+                        ) : (
+                          <Eye className="w-4 h-4" />
+                        )}
+                      </button>
+                    </Td>
+                  </Tr>
 
-                  <Td className="text-center">{emp.joinedDate}</Td>
-                  <Td className="text-center">
-                    <button onClick={() => toggleDetails(actualIndex)}>
-                      {isExpanded ? (
-                        <EyeOff className="w-4 h-4" />
-                      ) : (
-                        <Eye className="w-4 h-4" />
-                      )}
-                    </button>
-                  </Td>
-                </Tr>
-
-                <Tr>
-                  <Td colSpan={8} className="p-0 m-0 border-0" noDefault>
-                    <div
-                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                        isExpanded ? "max-h-96 p-4" : "max-h-0 p-0"
-                      }`}
-                      style={{ backgroundColor: "#f9fafb" }}
+                  <Tr>
+                    <Td
+                      colSpan={columns.length + 1}
+                      className="p-0 m-0 border-0"
+                      noDefault
                     >
-                      <div className="grid grid-cols-4 gap-4 font-bold border-b pb-2 mb-2">
-                        <div>Projects</div>
-                        <div>Performance (2023)</div>
-                        <div>Skills</div>
-                        <div>Last Promotion Date</div>
+                      <div
+                        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                          isExpanded ? "max-h-96 p-4" : "max-h-0 p-0"
+                        }`}
+                        style={{ backgroundColor: "#f9fafb" }}
+                      >
+                        <div className="grid grid-cols-4 gap-4 font-bold border-b pb-2 mb-2">
+                          <div>Projects</div>
+                          <div>Performance (2023)</div>
+                          <div>Skills</div>
+                          <div>Last Promotion Date</div>
+                        </div>
+                        <div className="grid grid-cols-4 gap-4">
+                          <div>
+                            {emp.details?.projects?.join(", ") || "N/A"}
+                          </div>
+                          <div>
+                            {emp.details?.performance?.["2023"] || "N/A"}
+                          </div>
+                          <div>{emp.details?.skills?.join(", ") || "N/A"}</div>
+                          <div>{emp.details?.lastPromotionDate || "N/A"}</div>
+                        </div>
                       </div>
-                      <div className="grid grid-cols-4 gap-4">
-                        <div>{emp.details?.projects?.join(", ") || "N/A"}</div>
-                        <div>{emp.details?.performance?.["2023"] || "N/A"}</div>
-                        <div>{emp.details?.skills?.join(", ") || "N/A"}</div>
-                        <div>{emp.details?.lastPromotionDate || "N/A"}</div>
-                      </div>
-                    </div>
-                  </Td>
-                </Tr>
-              </>
-            );
-          }}
-        />
+                    </Td>
+                  </Tr>
+                </>
+              );
+            }}
+          />
+        )}
 
         <TFooter>
           <Tr>
